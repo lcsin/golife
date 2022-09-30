@@ -1,0 +1,16 @@
+application:
+  host: 0.0.0.0
+  port: 8080
+  mode: dev
+database:
+  driver: mysql
+  source: root:root@tcp(10.225.137.237:3306)/golife?charset=utf8mb4&parseTime=True&loc=Local
+zap:
+  # 是否开启日志切割
+  cut: false
+  # 日志文件路径
+  path: ./log/app.log
+  # 日志风格：console、json、gin
+  style: gin
+  # 是否记录错误日志，默认路径为 ./log/<timestamp>.err.log
+  error: false
